@@ -21,13 +21,13 @@ public class Employee2Application {
 		ConfigurableApplicationContext context= SpringApplication.run(Employee2Application.class, args);
 	    EmployeeServiceImpementation bean=context.getBean(EmployeeServiceImpementation.class);
 	     
-	    Employee emp=new Employee(101,"Pooja", "Pune", "Maharashtra","9764537896",789888);	    
-	    Employee emp1=new Employee(202,"Sangita", "Pune", "Maharashtra","9763737896",99999);	    
-	    Employee emp2=new Employee(303,"Arun", "Pune", "Maharashtra","9764598896",99999);	    
+	    Employee emp=new Employee(101,null, "Pune", "Maharashtra","9764537896",789888);	    
+//	    Employee emp1=new Employee(202,"Sangita", "Pune", "Maharashtra","9763737896",99999);	    
+//	    Employee emp2=new Employee(303,"Arun", "Pune", "Maharashtra","9764598896",99999);	    
 
 	    bean.saveEmployee(emp);
-	    bean.saveEmployee(emp1);
-	    bean.saveEmployee(emp2);
+//	    bean.saveEmployee(emp1);
+//	    bean.saveEmployee(emp2);
 
 	    
 	    

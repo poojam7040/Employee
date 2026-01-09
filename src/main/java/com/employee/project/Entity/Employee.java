@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.lang.NonNull;
+
 @Entity
 @Table
 public class Employee {
@@ -16,6 +18,7 @@ public class Employee {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 	@Column
+	@NonNull
 	private String name;
 	@Column
 	private String city;
